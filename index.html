@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片切换</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id="wrap">
+    <!--<div class="__Img__container">-->
+        <!--<ul class="__Img__classify">-->
+            <!--<li class="__Img__classify__type-btn __Img__type-btn-active">类别1</li>-->
+            <!--<li class="__Img__classify__type-btn">类别2</li>-->
+        <!--</ul>-->
+        <!--<div class="__Img__img-container">-->
+
+            <!--<figure>-->
+                <!--<img alt="" src="./images/1.jpg"/>-->
+                <!--<figcaption>title</figcaption>-->
+            <!--</figure>-->
+
+        <!--</div>-->
+    <!--</div>-->
+</div>
+
+<!--<div class="__Img__overlay">-->
+    <!--<div class="__Img__overlay-prev-btn"></div>-->
+    <!--<div class="__Img__overlay-next-btn"></div>-->
+    <!--<img alt="" src="./images/1.jpg">-->
+<!--</div>-->
+
+<script src="./js/data.js"></script>
+<!--<script src="./js/read.js"></script>-->
+<script src="js/index.js"></script>
+<script>
+    //根据Img的构造函数中的_init方法中参数赋值
+    const img=new $Img({
+        data, //data是data.js中的数据
+        initType:'JavaScript',
+        parasitifer:'#wrap'
+    });
+</script>
+</body>
+</html>
